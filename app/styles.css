@@ -1,0 +1,568 @@
+
+@font-face {
+  font-family: "font1";
+  src: url(../assets/fonts/NabulistMedium-gwpnq.otf);
+}
+
+body {
+  background-image: url(../assets/images/fondoapp.png);
+  background-color: rgb(24, 24, 24);
+  
+  
+  /*barra lateral*/
+  .box {
+    top: 160px;
+    left: 35.4px;
+    z-index: -2;
+    display: flex;
+    border-radius: 6px;
+    position: absolute;
+    padding: 105px 35px;
+    background-color: rgba(255, 255, 255, 0.555);
+  }
+  .HomeIcon{
+    top: 165px;
+    left: 40px;
+    width: 60px;
+    display: flex;
+    position: absolute;
+  }
+  .InfoIcon{
+    top: 233px;
+    left: 40px;
+    width: 60px;
+    display: flex;
+    position: absolute;
+  }
+  .GitIcon{
+    top: 300px;
+    left: 42.5px;
+    width: 53px;
+    display: flex;
+    position: absolute;
+  }
+  /*barra lateral*/
+   
+  /*superior y inferior*/
+  .h1 {
+    top: 50px;
+    left: 120px;
+    color: white;
+    display: flex;
+    font-size: 35px;
+    position: absolute;
+    font-family: "font1";
+    letter-spacing: -2px;
+    
+  }
+  .h2 {
+    top: 80px;
+    left: 121px;
+    display: flex;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    font-family: "font1";
+    letter-spacing: -2px;
+  }
+  .AppData {
+    left: 70px;
+    z-index: 1;
+    bottom: 37px;
+    display: flex;
+    position: absolute;
+  }
+  .text {
+    left: 16px;
+    display: flex;
+    font-size: 14px;
+    position: relative;
+    align-items: center;
+    font-family: "arial";
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.384);
+  
+  }
+  
+  
+  .logo {
+    top: 5px;
+    left: 0px;
+    width: 150px;
+    display: flex;  
+    cursor: pointer;
+    position: absolute;
+  }
+  .XeraLogo {
+    left: 16px;
+    width: 60px;
+    bottom: 19px;
+    display: flex;
+    cursor: pointer;
+    padding: 5px 5px;
+    position: absolute;
+    border-radius: 100px;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  /*superior y inferior*/
+  
+  /*Botones y generacion de texto*/
+  .generador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Btn {
+  
+    z-index: 4;
+    top: 200px;
+    border: none;
+    display: flex;
+    color: white;
+    cursor: pointer;
+    font-size: 45px;
+    position: relative;
+    padding: 30px 60px;
+    border-radius: 6px;
+    font-family: "arial black";
+    background-color: #59f58d;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.418);
+  
+  }
+  .Resultados {
+    top: 330px;
+    z-index: 4;
+    bottom: unset;
+    display: flex;
+    color: white;
+    position: fixed;
+    font-size: 30px;
+    padding: 15px 60px;
+    border-radius: 6px;
+    font-family: "arial";
+    background-color: rgb(70, 70, 70);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.418);
+  }
+  .Resultados2 {
+    top: 400px;
+    z-index: 4;
+    bottom: unset;
+    display: flex;
+    color: white;
+    position: fixed;
+    font-size: 30px;
+    padding: 15px 60px;
+    border-radius: 6px;
+    font-family: "arial";
+    background-color: rgb(70, 70, 70);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.418);
+  }
+  .Resultados3 {
+    top: 470px;
+    z-index: 4;
+    bottom: unset;
+    display: flex;
+    color: white;
+    position: fixed;
+    font-size: 30px;
+    padding: 15px 60px;
+    border-radius: 6px;
+    font-family: "arial";
+    background-color: rgb(70, 70, 70);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.418);
+  }
+  /*Botones y generacion de texto*/
+  
+  /*Botones copiado de texto*/
+  .CopyPass{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .copy1 {
+    border: none;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    top: 470px;
+    left: -10px;
+    z-index: 5;
+    border: none;
+    font-size: 35px;
+    border-radius: 6px;
+    background-color: #73f559;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.418);
+  }
+  .copy2 {
+    border: none;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    top: 470px;
+    z-index: 5;
+    border: none;
+    font-size: 35px;
+    border-radius: 6px;
+    background-color: #eaf73f;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.418);
+  }
+  .copy3 {
+    border: none;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    top: 470px;
+    left: 10px;
+    z-index: 5;
+    border: none;
+    font-size: 35px;
+    border-radius: 6px;
+    background-color: #ff6363;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.418);
+  }
+  /*Botones copiado de texto*/
+  
+  /*InfoPage css*/
+  .infocase{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .case {
+    position: relative;
+    top: 140px;
+    width: 600px;
+    height: 400px;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.774);
+  }
+  .h3 {
+    color: white;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+  }
+  /*InfoPage css*/
+  
+  
+  /*Responsive menus*/
+  @media (max-width: 780px) {
+    .logo {
+      width: 150px;
+    }
+    .h1 {
+      font-size: 35px;
+    }
+    .case {  width: 400px;}
+  }
+  
+  /**/
+  
+  @media (max-width: 705px) {
+    .logo {
+      width: 150px;
+    }
+    .h1 {
+      font-size: 35px;
+    }
+    .case {  width: 300px;}
+  }
+  
+  /**/
+  
+  @media (max-width: 600px) {
+    .h1 {
+      font-size: 35px;
+    }
+    .logo {
+      width: 150px;
+    }
+    .Btn {
+      font-size: 40px;
+    }
+    .case {  width: 300px;}
+  }
+  
+  /**/
+  
+  @media (max-width: 400px) {
+    .logo {
+      width: 120px;
+    }
+    .h1 {
+      font-size: 26px;
+      top: 42px;
+      left: 95px;
+    }
+    .Btn {
+      font-size: 20px;
+    }
+    .case {  width: 0px;}
+  }
+  /*Responsive menus*/
+  
+  
+  
+  
+      
+  
+  /* nativefier file:///C:/Users/kingz/Desktop/HTML/caracteres-random/app/app.html*/
+  overflow: hidden;
+}
+
+/*Barra superior y menu*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background-color: rgba(41, 41, 41, 0.904);
+  border-radius: 16px;
+}
+
+.h1 {
+  display: flex;
+  font-family: "whiskey";
+  font-size: 70px;
+  letter-spacing: -2px;
+  color: white;
+}
+.logo {
+  display: flex;
+  position: absolute;
+  width: 100px;
+  top: 8px;
+  left: 10px;
+}
+.GitLogo {
+  display: flex;
+  position: absolute;
+  cursor: pointer;
+  width: 60px;
+  background-color: white;
+  padding: 5px 5px;
+  border-radius: 100px;
+  bottom: 60px;
+  left: 10px;
+}
+/*Barra superior y menu*/
+
+/*Botones y generacion de texto*/
+.generador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Btn {
+  display: flex;
+  position: relative;
+  padding: 30px 60px;
+
+  cursor: pointer;
+
+  font-family: "whiskey";
+  font-size: 45px;
+  color: white;
+  top: 120px;
+  background-color: rgb(70, 255, 116);
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.575);
+  border-radius: 16px;
+  border: none;
+  z-index: 4;
+}
+.Resultados {
+  display: flex;
+  position: fixed;
+  font-family: "consolas";
+  font-size: 30px;
+  color: white;
+
+  padding: 30px 60px;
+  top: 330px;
+  background-color: rgb(83, 83, 83);
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.575);
+  border-radius: 16px;
+  border-radius: 16px;
+  bottom: unset;
+  z-index: 4;
+}
+.Resultados2 {
+  display: flex;
+  position: fixed;
+  font-family: "consolas";
+  font-size: 30px;
+  color: white;
+
+  padding: 30px 60px;
+  top: 435px;
+  background-color: rgb(83, 83, 83);
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.575);
+  border-radius: 16px;
+  border-radius: 16px;
+  bottom: unset;
+  z-index: 4;
+}
+.Resultados3 {
+  display: flex;
+  position: fixed;
+  font-family: "consolas";
+  font-size: 30px;
+  color: white;
+
+  padding: 30px 60px;
+  top: 540px;
+  background-color: rgb(83, 83, 83);
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.575);
+  border-radius: 16px;
+  border-radius: 16px;
+  bottom: unset;
+  z-index: 4;
+}
+/*Botones y generacion de texto*/
+
+/*Botones copiado de texto*/
+
+.CopyPass{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copy1 {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  border: none;
+
+  font-size: 35px;
+
+  top: 500px;
+  left: -10px;
+  background-color: rgb(70, 255, 116);
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.575);
+  border-radius: 16px;
+  border: none;
+
+  z-index: 5;
+}
+.copy2 {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  border: none;
+
+  font-size: 35px;
+
+  top: 500px;
+  
+
+  background-color: rgb(70, 255, 116);
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.575);
+  border-radius: 16px;
+  border: none;
+  z-index: 5;
+}
+.copy3 {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  border: none;
+
+  font-size: 35px;
+
+  top: 500px;
+  left: 10px;
+
+  background-color: rgb(70, 255, 116);
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.575);
+  border-radius: 16px;
+  border: none;
+
+  z-index: 5;
+}
+/*Botones copiado de texto*/
+
+.AppData {
+  display: flex;
+  position: absolute;
+  left: 20px;
+  height: 35px;
+  width: 140px;
+  bottom: 8px;
+  background-color: rgba(41, 41, 41, 0.904);
+  border-radius: 12px;
+  z-index: 1;
+}
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-family: "consolas";
+  color: white;
+  font-size: 14px;
+  left: 20px;
+}
+
+.textCopy{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.AviseCopy{
+  display: flex;
+  position: fixed;
+  font-family: consolas;
+  color: white;
+  bottom: 0px;
+
+}
+
+
+/*Responsive menus*/
+@media (max-width: 780px) {
+  .logo {
+    width: 0%;
+  }
+  .Blogo {
+    width: 0%;
+  }
+  .AviseCopy{
+    font-size: 0%;
+  }
+}
+
+@media (max-width: 705px) {
+  .logo {
+    width: 0%;
+  }
+  .Blogo {
+    width: 0%;
+  }
+}
+@media (max-width: 600px) {
+  .h1 {
+    font-size: 50px;
+  }
+
+  .logo {
+    width: 0%;
+  }
+  .Btn {
+    font-size: 40px;
+  }
+}
+@media (max-width: 400px) {
+  .h1 {
+    font-size: 45px;
+  }
+  .Btn {
+    font-size: 20px;
+  }
+}
+/*Responsive menus*/
+
+/* nativefier file:///C:/Users/kingz/Desktop/HTML/caracteres-random/app/app.html*/
